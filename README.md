@@ -1,16 +1,49 @@
 # customer_shopping_behavior_analysis
-This project demonstrates an end-to-end data analytics workflow using customer shopping transaction data. It starts with loading the dataset in Python, performing exploratory data analysis (EDA), cleaning and transforming the data, and answering business questions using SQL in MySQL Workbench. The results are presented through a Power BI dashboard, a project report, and a PowerPoint presentation.
-The goal is to understand customer spending patterns, product preferences, discount usage, shipping choices, subscription behaviour, and customer segments to support data-driven business decisions.
+
+📌 Overview
+An end-to-end data analytics project exploring 3,900 customer purchases to understand spending patterns, product preferences, discount usage, shipping choices, subscriptions, and customer segments. The workflow covers Python, SQL,and Power BI.
+
 📊 Dataset
-- Records: 3,900
-- Columns: 18
-- Missing values: 37 values in the Review Rating column
-- Data includes: Customer demographics, purchase details, product categories, purchase amounts, seasons, discounts, previous purchases, purchase frequency, review ratings, shipping type, and subscription status.
-Note: Add the dataset source/link here if you are allowed to share it. Do not upload data you do not have permission to distribute.
-🛠️ Tools & Technologies
-- Python — data loading, exploratory data analysis, cleaning, and feature engineering
-- Pandas — data manipulation and missing-value handling
-- MySQL Workbench — SQL queries and business analysis
-- Power BI — dashboard and data visualisation
-- Microsoft Word — project documentation and report
-- Microsoft PowerPoint — presentation of findings
+- Records: 3,900 | Columns: 18
+- Missing values: 37 in Review Rating
+- Includes customer demographics, purchase details, discounts, ratings, shipping, and subscription status.
+  
+🛠️ Tools
+- Python & Pandas — EDA, data cleaning, and feature engineering
+- MySQL Workbench — SQL business analysis
+- Power BI — dashboard and visualisations
+  
+🔄 Workflow
+1. Python EDA: Loaded the dataset and reviewed structure, summary statistics, and missing values.
+2. Data Cleaning: Imputed missing ratings using category-level medians, standardised column names, created age_group and purchase_frequency_days, and reviewed redundant fields.
+3. SQL Analysis: Investigated revenue by gender, discounts, product ratings, shipping, subscriptions, customer segments, repeat buyers, and age groups.
+   
+📈 Key Findings
+- Revenue by gender: Male customers generated 157,890; female customers generated 75,191.
+- Average purchase amount: Express shipping was 60.48 versus 58.46 for Standard shipping.
+- Customer segments: 3,116 Loyal, 701 Returning, and 83 New customers.
+- Top-rated products: Gloves (3.86), Sandals (3.84), Boots (3.82), Hat (3.80), and Skirt (3.79).
+- Age groups: Young adults had the highest reported revenue at 62,143.
+Figures are taken from the project report. Confirm currency and metric definitions before external use.
+
+💡 Business Recommendations
+- Test subscription benefits and loyalty rewards.
+- Review discount-heavy products alongside profitability.
+- Promote top-rated and best-selling products.
+- Tailor campaigns using age-group and shipping insights.
+  
+▶️ How to Run
+1. Open the Python notebook in Jupyter Notebook or VS Code.
+2. Install dependencies if needed: pip install pandas numpy matplotlib seaborn jupyter
+3. Set the correct dataset path and run the notebook cells.
+4. Import the cleaned data into MySQL, then run the SQL queries in MySQL Workbench.
+5. Open the .pbix file in Power BI Desktop and update data-source settings if prompted.
+   
+📁 Repository Contents
+- notebooks/ — Python notebook
+- sql/ — SQL queries
+- powerbi/ — Power BI dashboard
+
+## 📄 License
+This project is licensed under the MIT License.
+See the [LICENSE](LICENSE) file for details.
